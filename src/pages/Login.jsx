@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google'
 
-const GOOGLE_CLIENT_ID = '381455708154-fgugflsl4ilmgn5ti0egce0nve4phcif.apps.googleusercontent.com'
+const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID
 
 function Login() {
   const navigate = useNavigate()
